@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第二章 css 选择器</title>
+    <link rel="stylesheet" href="chapter02.css"> 
+    
+</head>
+<body>
+    <h1>第二章 css 选择器</h1>
+    
+    <h2>2.1 组合选择器</h2>
+        <div class="div1"> div1 </div>
+        <div class="div2"> div2 </div>
+
+    <h2>2.2 嵌套选择器</h2>
+        <div class="div3">
+            div3
+            <div class="div4">
+                div4
+                <p class="div4">
+                    p-div4
+                </p>
+            </div>
+        </div>
+
+        <div class="div4">
+            div-div4
+        </div>
+        
+    <h2>2.3 子选择器</h2>
+        <div class="div5">
+            div5
+            <div class="div6">
+                div6
+                <p class="div6">
+                    p-div6
+                </p>
+            </div>
+        </div>
+
+        <div class="div6">
+            div-div6
+            <p class="div6">
+                p-div6
+            </p>
+        </div>
+
+    <h2>2.4 相邻选择器</h2>
+        <div class="div7">
+            div7
+            <div class="div8">
+                div8
+                <p class="div8">
+                    p-div8
+                </p>
+            </div>
+        </div>
+
+        <div class="div8">
+            div-div7
+            <p class="div8">
+                p-div8
+            </p>
+        </div>
+
+    <h2>2.5 属性选择器</h2>
+        <div test="qiuqiu">
+            qiuqiu-1
+            <p>
+                test-1
+            </p>
+        </div>
+
+        <div test="qiuqiu cc">
+            qiuqiu-2
+            <p>
+                test-2
+            </p>
+        </div>
+
+        <div test="qiuqiudfsaf">
+            qiuqiu-3
+            <p>
+                test-3
+            </p>
+        </div>
+
+        <div test="dasfdsqiuqiu">
+            qiuqiu-4
+            <p>
+                test-4
+            </p>
+        </div>
+            
+
+    <h2>2.6 伪元素选择器</h2>
+        
+    <h2>2.7 背景</h2>
+
+    <h2>2.8 字体</h2>
+        <div class="font-top">
+            <div class="font-style">
+                字体的控制都以font-开头
+            <br />
+                hello world!
+            </div>
+        </div>
+
+    <h2>2.9 文本</h2>
+        <div class="txt1">
+            文本测试1 文本测试1 文本测试1
+        </div>
+
+        <div class="txt2">
+            文本测试2 文本测试2 文本测试2
+        </div>
+
+        <div class="txt3">
+            文本测试3 文本测试3 文本测试3
+        </div>
+    
+    <div class="overdiv">
+        <h2>2.10 省略号</h2>
+        <div class="overdata">
+            测试一下字过多时使用省略号来代表
+        </div>
+    </div>
+
+    <h2>2.11 链接字体</h2>
+
+    <div>
+        <a href="https://www.baidu.com" target="_blank">链接1 默认</a>
+        <br/>
+        <a class="testlink" href="sdsad">链接2 修改颜色</a>
+    </div>
+
+</body>
+</html>

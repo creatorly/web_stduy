@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第三章 块</title>
+
+    <style>
+    .box-up{
+        background-color:yellow;
+        height: 40px;
+    }
+    .box-down{
+        background-color: blueviolet;
+        height: 40px;
+        clear: both;
+    }
+
+    .box-left{
+        background-color: greenyellow;
+        height: 120px;
+        width: 15%;
+        float: left;
+    }
+
+    .box-right{
+        background-color: greenyellow;
+        height: 120px;
+        width: 15%;
+        float: left;
+    }
+    .box-middle{
+        background-color:hotpink;
+        height: 120px;
+        width: 70%;
+        float: left;
+    }
+    
+    </style>
+</head>
+
+<body>
+    <h1>第三章 块</h1>
+
+    <h4>块元素：独立成一行，可以设置宽高，默认宽高100%</h4>
+        <ul>
+            <li>文字类块元素：p h1-h6</li>
+            <li>容器类块元素：div table tr td th form ul li ol dl dt dd</li>
+        </ul>
+        
+    <h4>行元素：不独立成一行，不可以设置宽高，由内容决定</h4>
+        <ul>
+            <li>a img input strong em dl span </li>
+            <li>特殊字符：文字 br &nbsp</li>
+        </ul>
+        
+    <h4>嵌套规则</h4>
+        <ul>
+            <li>块元素可以嵌套行元素</li>
+            <li>行元素可以嵌套行元素</li>
+            <li>行元素不可以嵌套块元素</li>
+            <li>文字类块元素不可以嵌套块元素</li>
+            <li>容器类块元素可以嵌套块元素</li>
+        </ul>
+    
+
+    <h2>3.1 div默认是从上往下排序的</h2>
+    
+    <div style="background:yellow; width: 180px; height: 180px;">div1</div>
+    <div style="background:green; width: 180px; height: 180px;">div2</div>
+    <div style="background:fuchsia; width: 180px; height: 180px;">div3</div>
+    
+    <h2>3.2 div添加float是其可以左右排序</h2>
+
+    <div style="background-color: yellow; height: 180px;">
+        导航
+    </div>
+
+    <div style="background-color:green; width: 20%; height: 300px; float: left;">
+        菜单
+    </div>
+
+    <div style="background-color:fuchsia; width: 80%; height: 300px; float: left;">
+        内容
+    </div>
+
+    <h2>3.2 为div添加class进行描述</h2>
+    <div class="box-up"></div>
+    <div class="box-left"></div>
+    <div class="box-middle"></div>
+    <div class="box-right"></div>
+    <div class="box-down"></div>    
+
+</body>
+</html>

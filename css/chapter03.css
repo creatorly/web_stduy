@@ -1,0 +1,24 @@
+.site-topbar{
+    background-color:gray;
+    height: 40px;
+}
+.container{
+    width: 1226px;
+    margin: auto;
+}
+
+.topbar-nav{
+    color: aliceblue;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+
+.topbar-cart{
+    color: aliceblue;
+    float: right;
+}
+.topbar-info{
+    color: aliceblue;
+    float: right;
+}

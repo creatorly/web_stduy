@@ -1,0 +1,31 @@
+.div3 {
+    background-color:yellow; 
+    width: 100px; 
+    height: 100px;
+}
+
+/* *通配符 */
+* {
+    border: 1px solid black;
+}
+
+/* 标签dev p */
+div {
+    border: 1px solid yellow;
+    color: red;
+}
+
+p {
+    border: 1px solid blue;
+    color: green;
+}
+
+/* id 选择器 */
+#txt {
+    border: 1px solid salmon;
+    font-size: 60px;
+}
+
+.class-test {
+    border: 1px solid yellow;
+}

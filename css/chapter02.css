@@ -1,0 +1,195 @@
+
+/* 组合选择器
+相同的属性可以写在一块儿
+如下面div1和div2都具有background-color和font-size两个属性，div2又多了一个color属性 */
+
+.div1, .div2{
+    background-color: yellow;
+    font-size: 20px;
+}
+
+.div2 {
+    color: red;
+}
+
+/* 嵌套选择器 
+div3空格div4，代表在div3里面的div4会有以下属性，不在div3里面的div4不会有影响*/
+.div3 {
+    color:green;
+}
+
+.div4 {
+    color: red;
+}
+
+.div3 .div4 {
+    background-color: yellow;
+    font-size: 20px;
+}
+
+/* 子选择器 
+父辈
+注意：p会继承上次的div属性*/
+.div5 {
+    color:green;
+}
+
+.div6 {
+    color: red;
+}
+
+.div5>.div6 {
+    background-color: yellow;
+    font-size: 20px;
+}
+
+/* 相邻选择器 
+相邻
+注意：p会继承上次的div属性*/
+.div7 {
+    color:green;
+}
+
+.div8 {
+    color: red;
+}
+
+.div7+.div8 {
+    background-color: yellow;
+    font-size: 20px;
+}
+
+/* 属性选择器 
+[属性=值]
+[属性~=值]
+[属性^=值]
+[属性$=值]*/
+div[test=qiuqiu] {
+    background-color: yellow;
+}
+
+ div[test~=qiuqiu] {
+    background-color: green;
+}
+
+div[test^=qiuqiu] {
+    background-color:blue;
+}
+
+div[test$=qiuqiu] {
+    background-color:red;
+} 
+
+.font-top {
+    border: 1px solid black;
+    height: 200px;
+    display: block;
+}
+
+.font-style {
+    /* 边框 */
+    border: 1px solid black;
+    /* 字体 从前往后，那一个匹配就用哪一个*/
+    font-family: "黑体", Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* 字体大小 */
+    font-size: 30px;
+    /* 字体粗细 100-900 */
+    font-weight: 500;
+    /* 字体形状，italic-斜体*/
+    font-style: italic;
+    /* 字体间的行间距 */
+    line-height: 100%;
+    /* 字体到边框直接的距离，内边距 */
+    padding: 20px;
+    /* 外边框到更外层的距离，外边距 */
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.txt1 {
+    display: block;
+    border: 1px solid red;
+    margin: 20px;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    float: left;
+    /* 空格的距离 默认0px */
+    word-spacing: 0px;
+    /* 字符的间距 默认0px*/
+    letter-spacing: px;
+    /* 从左到右 left to right */
+    direction: inherit;
+    /* 上划线overline，中划线line-through，下划线underline*/
+    text-decoration: line-through;
+    /* 对齐方式，左 右 中 自动*/
+    text-align: center;
+}
+
+.txt2 {
+    display: block;
+    border: 1px solid blue;
+    margin: 20px;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    float: left;
+    /* 空格的距离 默认0px */
+    word-spacing: 10px;
+    /* 字符的间距 默认0px*/
+    letter-spacing: 5px;
+    /* 从右到左 right to left */
+    direction: ltr;
+    /* 上划线，中划线，下划线 */
+    text-decoration: overline;
+    /* 对齐方式，左 右 中 自动*/
+    text-align: left;
+    /* 缩进 */
+    text-indent: 40px;
+}
+
+.txt3 {
+    display: block;
+    border: 1px solid green;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    float: left;
+    /* 空格的距离 默认0px */
+    word-spacing: -10px;
+    /* 字符的间距 默认0px*/
+    letter-spacing: -5px;
+    /* 从右到左 right to left */
+    direction: rtl;
+    /* 上划线，中划线，下划线 */
+    text-decoration: underline;
+    /* 对齐方式，左 右 中 自动*/
+    text-align: right;
+}
+
+.overdiv {
+    clear: both;
+}
+.overdiv .overdata {
+    background-color: yellow;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.testlink:link{
+    color: blue;
+}
+
+.testlink:visited {
+    color: yellow;
+}
+
+.testlink:hover {
+    color: green;
+}
+
+.testlink:active {
+    color: red;
+}

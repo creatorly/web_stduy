@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第一章 文字、图片、链接</title>
+</head>
+<body>
+    <h1>第一章 文字、图片、链接</h1>
+
+    <h2>1.3 图片</h2>
+    <p>
+        插入绝对路径图片：
+        <br />
+        <img src="img/斯嘉丽.jpg" width="160" height="160">
+        <br />
+        插入相对路径图片，并设置有边框：
+        <br />
+        <img src="img/Scarlett Johansson.jpg"  width="320" height="320" border="1">
+        <br />
+        设置图片提示语：
+        <br />
+        <img src="img/Scarlett Johansson.jpg"  width="480" height="480" title="斯嘉丽美女。。。">
+        <br />
+        插入网络资源图片：
+        <br />
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543814995214&di=fa1881be590ba53a4a67fc9c1e06c82b&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farchive%2Ffe6533696ef6593d76b999674e2e499fd6c05ff7.jpg" width="480" height="320" title="斯嘉丽美女。。。">
+        <br />
+        插入不存在的图片，设置图片不存在时的提示语：
+        <br />
+        <img src="Scarlett Johansson.jpg" alt="Scarlett Johansson">
+    </p>
+
+    <h2>1.4 链接</h2>
+    <p>
+        <a href="#">
+            空链接用#表示
+        </a>
+        <br />
+        本页打开：<a href="https://www.w3cschool.cn/html/">
+            https://www.w3cschool.cn/html/
+        </a>
+        <br />
+        新页面打开：<a href="https://www.w3cschool.cn/html/" target="_blank">
+            https://www.w3cschool.cn/html/
+        </a>
+        <br />
+        插入图片链接：
+        <a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543814995214&di=fa1881be590ba53a4a67fc9c1e06c82b&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farchive%2Ffe6533696ef6593d76b999674e2e499fd6c05ff7.jpg" target="_blank">
+            <img src="img/smiley.gif" alt="smiley" title="search Scarlett Johansson">
+        </a>
+        <br />
+        插入相对路径图片，并设置有边框：
+        <br />
+        <img src="img/Scarlett Johansson.jpg"  width="320" height="320" alt="Scarlett Johansson" usemap="#Scarlettmap">
+
+        <map name="Scarlettmap">
+            <area shape="circle" coords="161,83,32" target="_blank" alt="smiley" href="img/smiley.gif">
+            <area shape="rect" coords="104,178,231,231" target="_blank" alt="Scarlett" href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543814995214&di=fa1881be590ba53a4a67fc9c1e06c82b&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farchive%2Ffe6533696ef6593d76b999674e2e499fd6c05ff7.jpg">
+        </map>
+    </p>
+
+</body>
+</html>
